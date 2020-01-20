@@ -219,7 +219,7 @@ main {
     border-radius: 4px;
     box-shadow: 10px 5px 10px #ccc;
     .newest-card__img {
-        background: url(../assets/03.jpg) no-repeat center center;
+        background: url(../assets/11.jpg) no-repeat center center;
         background-size: cover;
         height: 150px;
         position: relative;
@@ -252,15 +252,15 @@ main {
         }
     }
     .newest-card__img2 {
-        background: url(../assets/04.jpg) no-repeat center center;
+        background: url(../assets/08.jpg) no-repeat center center;
         background-size: cover;
     }
     .newest-card__img3 {
-        background: url(../assets/05.jpg) no-repeat center center;
+        background: url(../assets/09.jpg) no-repeat center center;
         background-size: cover;
     }
     .newest-card__img4 {
-        background: url(../assets/01.jpg) no-repeat center center;
+        background: url(../assets/10.jpg) no-repeat center center;
         background-size: cover;
     }
 }
@@ -304,7 +304,7 @@ main {
     border-radius: 4px;
     box-shadow: 10px 5px 10px #ccc;
     .affordable-card__img {
-        background: url(../assets/03.jpg) no-repeat center center;
+        background: url(../assets/12.jpg) no-repeat center center;
         background-size: cover;
         height: 150px;
         position: relative;
@@ -337,15 +337,15 @@ main {
         }
     }
     .affordable-card__img2 {
-        background: url(../assets/04.jpg) no-repeat center center;
+        background: url(../assets/13.jpg) no-repeat center center;
         background-size: cover;
     }
     .affordable-card__img3 {
-        background: url(../assets/05.jpg) no-repeat center center;
+        background: url(../assets/14.jpg) no-repeat center center;
         background-size: cover;
     }
     .affordable-card__img4 {
-        background: url(../assets/01.jpg) no-repeat center center;
+        background: url(../assets/15.jpg) no-repeat center center;
         background-size: cover;
     }
 }
@@ -389,7 +389,7 @@ main {
     border-radius: 4px;
     box-shadow: 10px 5px 10px #ccc;
     .luxury-card__img {
-        background: url(../assets/03.jpg) no-repeat center center;
+        background: url(../assets/16.jpg) no-repeat center center;
         background-size: cover;
         height: 150px;
         position: relative;
@@ -422,15 +422,15 @@ main {
         }
     }
     .luxury-card__img2 {
-        background: url(../assets/04.jpg) no-repeat center center;
+        background: url(../assets/17.jpg) no-repeat center center;
         background-size: cover;
     }
     .luxury-card__img3 {
-        background: url(../assets/05.jpg) no-repeat center center;
+        background: url(../assets/18.jpg) no-repeat center center;
         background-size: cover;
     }
     .luxury-card__img4 {
-        background: url(../assets/01.jpg) no-repeat center center;
+        background: url(../assets/19.jpg) no-repeat center center;
         background-size: cover;
     }
 }
@@ -499,7 +499,7 @@ main {
         margin-top: 2em;
     }
     .news-img {
-        background: url(../assets/01.jpg) no-repeat center center;
+        background: url(../assets/news/02.jpg) no-repeat center center;
         background-size: cover;
         width: 100%;
         background-size: cover;
@@ -515,15 +515,15 @@ main {
         }
     }
     .news-img2 {
-        background: url(../assets/03.jpg) no-repeat center center;
+        background: url(../assets/news/01.jpg) no-repeat center center;
         background-size: cover;
     }
     .news-img3 {
-        background: url(../assets/04.jpg) no-repeat center center;
+        background: url(../assets/news/03.jpg) no-repeat center center;
         background-size: cover;
     }
     .news-img4 {
-        background: url(../assets/05.jpg) no-repeat center center;
+        background: url(../assets/news/04.jpg) no-repeat center center;
         background-size: cover;
     }
     .news-text {
@@ -545,9 +545,10 @@ main {
 }
 
 footer {
-    margin-top: 2em;
+    margin-top: 3em;
     padding: 25px;
     background-color: #fff;
+    border-top: 1px solid #ccc;
     .footer-logo {
         h1 {
             font-family: $fontPrimary;
@@ -558,12 +559,16 @@ footer {
     }
     .footer-list1,.footer-list2,.footer-list3 {
         font-family: $fontSecondary;
-        h3 {
-            margin-top: 20px;
-        }
+
         a {
             color: black;
         }
+    }
+    li {
+        list-style-type: none;
+    }
+    a {
+        text-decoration: none;
     }
 }
 
@@ -584,6 +589,11 @@ footer {
     a {
         color: black;
     }
+}
+
+.nav-links-ctn {
+    background-color: rgb(246, 246, 246);
+    z-index: 100;
 }
 
 
@@ -631,5 +641,338 @@ footer {
     }
     .nav-active {
         transform: translateX(-20%);
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 500px) {
+    footer {
+        h3 {
+            margin: 20px 0px 20px 0px;
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    nav {
+        width: 700px;
+        margin: auto;
+        .nav-links-ctn {
+            width: 200px;
+            li {
+                margin-right: 30px;
+            }
+        }
+    }
+    .container-header {
+        width: 700px;
+        margin: auto;
+        h2 {
+            font-size: 30px;
+        }
+        h3 {
+            font-size: 25px;
+        }
+        button {
+            width: 50px;
+        }
+        input {
+            width: 400px !important;
+        }
+    }
+    .header-links {
+        width: 250px;
+        margin-top: 3em !important;
+    }
+   .homes-card-ctn {
+       display: grid;
+       grid-template-columns: 1fr 1fr 1fr 1fr;
+       .homes-card {
+           width: 180px;
+       }
+   }
+   .newest-card-ctn {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    .newest-card {
+        width: 180px;
+        }
+    }
+    .affordable-card-ctn {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        .affordable-card {
+            width: 180px;
+        }
+    }
+    .luxury-card-ctn {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        .luxury-card {
+            width: 180px;
+        }
+    }
+    .news-ctn {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        .news-card {
+            width: 180px;
+        }
+    }
+    .container-footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        h1 {
+            font-size: 23px;
+        }
+        h3 {
+            font-size: 16px;
+        }
+        li {
+            font-size: 14px;
+        }
+    }
+
+    .trends {
+        height: 40vh;
+        .trends-bg {
+            height: 100%;
+            h3 {
+                margin-top: 2em;
+                font-size: 30px;
+            }
+            h2 {
+                font-size: 25px;
+                width: 400px;
+                margin: auto;
+                margin-top: 2em;
+            }
+            button {
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    nav {
+        width: 900px;
+        margin: auto;
+        .nav-links-ctn {
+            width: 200px;
+            li {
+                margin-right: 30px;
+            }
+        }
+    }
+    .container-header {
+        width: 900px;
+        margin: auto;
+        h2 {
+            font-size: 30px;
+        }
+        h3 {
+            font-size: 25px;
+        }
+        button {
+            width: 50px;
+        }
+        input {
+            width: 400px !important;
+        }
+    }
+    .header-links {
+        width: 250px;
+        margin-top: 3em !important;
+    }
+   .homes-card-ctn {
+       display: grid;
+       grid-template-columns: 1fr 1fr 1fr 1fr;
+       .homes-card {
+           width: 220px;
+       }
+   }
+   .newest-card-ctn {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    .newest-card {
+        width: 220px;
+        }
+    }
+    .affordable-card-ctn {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        .affordable-card {
+            width: 220px;
+        }
+    }
+    .luxury-card-ctn {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        .luxury-card {
+            width: 220px;
+        }
+    }
+    .news-ctn {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        .news-card {
+            width: 220px;
+        }
+    }
+    .homes-text {
+        margin-left: 2%;
+    }
+    .container-footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        h1 {
+            font-size: 23px;
+        }
+        h3 {
+            font-size: 16px;
+        }
+        li {
+            font-size: 14px;
+        }
+    }
+
+    .trends {
+        height: 28vh;
+        .trends-bg {
+            height: 100%;
+            h3 {
+                margin-top: 2em;
+                font-size: 30px;
+            }
+            h2 {
+                font-size: 25px;
+                width: 400px;
+                margin: auto;
+                margin-top: 2em;
+            }
+            button {
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    nav {
+        width: 1100px;
+        margin: auto;
+        .nav-links-ctn {
+            width: 200px;
+            li {
+                margin-right: 30px;
+            }
+        }
+    }
+    .container-header {
+        width: 1100px;
+        margin: auto;
+        h2 {
+            font-size: 30px;
+        }
+        h3 {
+            font-size: 25px;
+        }
+        button {
+            width: 50px;
+        }
+        input {
+            width: 400px !important;
+        }
+    }
+    .header-links {
+        width: 250px;
+        margin-top: 3em !important;
+    }
+   .homes-card-ctn {
+       display: grid;
+       grid-template-columns: 1fr 1fr 1fr 1fr;
+       width: 1100px;
+       margin: auto;
+       margin: auto;
+       .homes-card {
+           width: 240px;
+       }
+   }
+   .newest-card-ctn {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: auto;
+    width: 1100px;
+    .newest-card {
+        width: 240px;
+        }
+    }
+    .affordable-card-ctn {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        margin: auto;
+        width: 1100px;
+        .affordable-card {
+            width: 240px;
+        }
+    }
+    .luxury-card-ctn {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        margin: auto;
+        width: 1100px;
+        .luxury-card {
+            width: 240px;
+        }
+    }
+    .news-ctn {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        width: 1100px;
+        margin: auto;
+        .news-card {
+            width: 240px;
+        }
+    }
+    .homes-text {
+        text-align: center;
+    }
+    .container-footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        width: 1100px;
+        margin: auto;
+        position: relative;
+        left: 30px;
+        h1 {
+            font-size: 23px;
+        }
+        h3 {
+            font-size: 16px;
+        }
+        li {
+            font-size: 14px;
+        }
+    }
+
+    .trends {
+        height: 100%;
+        .trends-bg {
+            height: 100%;
+            padding-bottom: 4em;
+            h3 {
+                margin-top: 2em;
+                font-size: 35px;
+            }
+            h2 {
+                font-size: 25px;
+                width: 500px;
+                margin: auto;
+                margin-top: 2em;
+            }
+            button {
+                font-size: 20px;
+            }
+        }
     }
 }
