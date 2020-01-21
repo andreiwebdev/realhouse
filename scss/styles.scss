@@ -46,6 +46,9 @@ nav {
             a {
                 text-decoration: none;
                 color: black;
+                &:hover {
+                    border-bottom: 2px solid $colorRed;
+                }
             }
         }
         .nav-account {
@@ -219,7 +222,7 @@ main {
     border-radius: 4px;
     box-shadow: 10px 5px 10px #ccc;
     .newest-card__img {
-        background: url(../assets/11.jpg) no-repeat center center;
+        background: url(../assets/12.jpg) no-repeat center center;
         background-size: cover;
         height: 150px;
         position: relative;
@@ -837,7 +840,6 @@ footer {
     }
 
     .trends {
-        height: 28vh;
         .trends-bg {
             height: 100%;
             h3 {
@@ -956,7 +958,6 @@ footer {
     }
 
     .trends {
-        height: 100%;
         .trends-bg {
             height: 100%;
             padding-bottom: 4em;

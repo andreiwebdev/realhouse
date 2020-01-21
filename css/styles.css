@@ -34,6 +34,8 @@ nav {
       nav .nav-links-ctn .nav-links a {
         text-decoration: none;
         color: black; }
+        nav .nav-links-ctn .nav-links a:hover {
+          border-bottom: 2px solid #d63031; }
     nav .nav-links-ctn .nav-account {
       display: flex;
       align-items: center;
@@ -168,7 +170,7 @@ main .homes {
   border-radius: 4px;
   box-shadow: 10px 5px 10px #ccc; }
   .newest-card .newest-card__img {
-    background: url(../assets/11.jpg) no-repeat center center;
+    background: url(../assets/12.jpg) no-repeat center center;
     background-size: cover;
     height: 150px;
     position: relative; }
@@ -640,20 +642,18 @@ footer {
       font-size: 16px; }
     .container-footer li {
       font-size: 14px; }
-  .trends {
-    height: 28vh; }
-    .trends .trends-bg {
-      height: 100%; }
-      .trends .trends-bg h3 {
-        margin-top: 2em;
-        font-size: 30px; }
-      .trends .trends-bg h2 {
-        font-size: 25px;
-        width: 400px;
-        margin: auto;
-        margin-top: 2em; }
-      .trends .trends-bg button {
-        font-size: 20px; } }
+  .trends .trends-bg {
+    height: 100%; }
+    .trends .trends-bg h3 {
+      margin-top: 2em;
+      font-size: 30px; }
+    .trends .trends-bg h2 {
+      font-size: 25px;
+      width: 400px;
+      margin: auto;
+      margin-top: 2em; }
+    .trends .trends-bg button {
+      font-size: 20px; } }
 
 @media only screen and (min-width: 1280px) {
   nav {
@@ -728,18 +728,16 @@ footer {
       font-size: 16px; }
     .container-footer li {
       font-size: 14px; }
-  .trends {
-    height: 100%; }
-    .trends .trends-bg {
-      height: 100%;
-      padding-bottom: 4em; }
-      .trends .trends-bg h3 {
-        margin-top: 2em;
-        font-size: 35px; }
-      .trends .trends-bg h2 {
-        font-size: 25px;
-        width: 500px;
-        margin: auto;
-        margin-top: 2em; }
-      .trends .trends-bg button {
-        font-size: 20px; } }
+  .trends .trends-bg {
+    height: 100%;
+    padding-bottom: 4em; }
+    .trends .trends-bg h3 {
+      margin-top: 2em;
+      font-size: 35px; }
+    .trends .trends-bg h2 {
+      font-size: 25px;
+      width: 500px;
+      margin: auto;
+      margin-top: 2em; }
+    .trends .trends-bg button {
+      font-size: 20px; } }
